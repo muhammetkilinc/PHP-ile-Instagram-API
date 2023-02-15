@@ -2,7 +2,7 @@
 
 
 .....
-![örnek görsel](https://user-images.githubusercontent.com/71228518/219182893-938efc3a-9eef-4556-be84-ca0cdd6b3ed8.png)
+![örnek görsel](https://user-images.githubusercontent.com/71228518/219197141-efcc8952-3661-4388-8ab0-56a17736bbf2.png)
 .....
 
 Instagram'daki kullanıcıların ID'sini, profilini, gönderi sayısını, takipçi sayısını 
