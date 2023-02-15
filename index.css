@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+:root {
+    --anaRenk: #1C4784;
+    --koyuRenk: #0d346b;
+    --pasifRenk: #E5E9F2;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background:var(--anaRenk);
+    border-radius: 15px;    
+}
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: white;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+    z-index: 50;
+}
+
+
+/* logo */
+
+.logoBox {
+    position: relative;
+    width: 25%;
+}
+
+.logoBoxLine {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+
+/* search */
+
+.araBox {
+    position: relative;
+    width: 50%;
+}
+
+.ara {
+    position: absolute;
+    width: 70%;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px;
+    border-radius: 7px;
+    background-color: var(--pasifRenk);
+    border: 0px solid #a8a8a8;
+}
+
+.ara:focus {
+    font-weight: 600;
+    border: .1px solid #a8a8a8;
+}
+
+.ara::placeholder {
+    font-weight: 400!important;
+}
+
+.araButon {
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    cursor: pointer;
+    z-index: 10;
+    width: 26px;
+    padding: 6px;
+    border-radius: 5px;
+    transition: .2s all;
+}
+
+.araButon:hover {
+    background: #bcd4f4;
+}
+
+
+/* profil linki */
+
+.githubLinkBox {
+    position: relative;
+    width: 25%;
+}
+
+.githubLink {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background: #000;
+    left: 85%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+
+
+/* İçerik */
+
+.panel {
+    position: fixed;
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+/* arama ifadesini bildirme */
+
+.result {
+    position: absolute;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #D1ECF1;
+    color: #0C5460;
+    font-weight: 600;
+    left: 50%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+}
+
+.profilError {
+    position: absolute;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #F8D7DA;
+    color: #a12a2a;
+    font-weight: 600;
+    left: 50%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+}
+
+
+
+/* menü */
+
+.menu {
+    position: relative;
+    width: 20%;
+    background: #f7f7f7;
+    border-right: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.profilBox {
+    position: relative;
+    height: 160px;
+    margin-top: 35px;
+}
+
+.profilBoxLine {
+    --profilLine: 120px;
+    position: absolute;
+    width: var(--profilLine);
+    height: var(--profilLine);
+    border-radius: var(--profilLine);
+    background-color: #89b5bc;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 2px solid #ddd;
+}
+
+.instaProfil {
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+
+.profilBoxBorder {
+    --profilBorder: 140px;
+    position: absolute;
+    width: var(--profilBorder);
+    height: var(--profilBorder);
+    border-radius: var(--profilBorder);
+    background-color: transparent;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border: 4px solid var(--anaRenk);
+}
+
+.tamAdBox, .kullaniciBox {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.kullaniciBox {
+    padding: 0 0 20px 0;
+    font-weight: 400;
+    font-size: 15px;
+    color: gray;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.verifyIcon {
+    position: absolute;
+    width: 20px;
+    margin-left: 5px;
+}
+
+.infoBox {
+    position: relative;
+    padding: 10px 40px 20px 40px;
+    margin-top: 15px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.gonderi {
+    position: absolute;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.gonderiText {
+    margin-left: 30px;
+    color: #1C4784;
+}
+
+.instagramLinkBox {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.linkBoxLine {
+    position: absolute;
+    font-size: 12px;
+    background: var(--anaRenk);
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 230px;
+    text-align: center;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: .2s background;
+}
+
+.linkBoxLine:hover {
+    background: var(--koyuRenk);
+}
+
+.backColor {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 500px;
+    background: rgba(28, 71, 132, .1);
+    left: 50%;
+    margin-top: -570px;
+    transform: translateX(-50%);
+    filter: blur(2px);
+}
+
+
+
+/* görseller */
+
+.icerik {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.id {
+    font-size: 12px;
+    color: gray;
+}
+
+.usernameText {
+    display: flex;
+}
+
+.link {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.infoBox a {
+    color: black;
+}
+
+.infoBox a:hover {
+    color: var(--anaRenk);
+}
+
+
+/* Fotoğraflar */
+
+.fotografBox {
+    padding: 20px 40px;
+    height: 90%;
+}
+
+.fotografBox h4 {
+    position: relative;
+    background: var(--pasifRenk);
+    padding: 13px 20px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.photoIcon {
+    position: absolute;
+    width:25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fotografBox h4 span {
+    margin-left: 35px;
+}
+
+.fotograflar {
+    border: 1px solid #ddd;
+    margin: 20px 0px;
+    border-radius: 7px;
+    background: white;
+    height: 70%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+/* Fotoğraf Listeleme */
+
+.fotoLine {
+    position: relative;
+    width: 22%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 7px;
+    background: #f7f7f7;
+    float: left;
+    border: .5px solid #ddd;
+}
+
+.fotoSinirlayici {
+    position: absolute;
+    width: 90%;
+    height: 77%;
+    left: 50%;
+    margin-top: 12px;
+    transform: translateX(-50%);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.foto {
+    width: 100%;
+}
+
+.fotoAd {
+    position: absolute;
+    top: 90%;
+    margin-left: 15px;
+    transform: translateY(-50%);
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70%;
+}
+
+.fotoLine a {
+    color: black;
+    width: 100%;
+    background: red;
+}
+
+.fotoLine a:hover {
+    color: var(--anaRenk);
+}
+
+.fotoLink {
+    position: absolute;
+    width: 15px;
+    top: 90%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+}
