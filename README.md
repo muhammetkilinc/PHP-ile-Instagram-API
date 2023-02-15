@@ -11,5 +11,6 @@ ve post fotoğraflarını klasörünüze kaydetmenizi sağlar.
 Aynı zamanda web site tasarımıyla da, elde edilen verileri görebilirsiniz. 
 Arama yaptığınız anda klasörün altına o kullanıcının birtakım bilgileri info.txt dosyasına eklenir. 
 
-<br/>
+Örnek URL `http://localhost/instagramApi/index.php?username=github`
+
 **Muhammet KILINÇ © 2023**
