@@ -9,7 +9,7 @@ Instagram'daki kullanıcıların ID'sini, profilini, gönderi sayısını, takip
 ve post fotoğraflarını klasörünüze kaydetmenizi sağlar.
 
 Aynı zamanda web site tasarımıyla da, elde edilen verileri görebilirsiniz. 
-Arama yaptığınız anda klasörün altına o kullanıcının birtakım bilgileri info.txt dosyasına eklenir. 
+Arama yaptığınız anda klasörün altına o kullanıcının birtakım bilgileri `info.txt` dosyasına eklenir. 
 
 Örnek URL `http://localhost/instagramApi/index.php?username=github`
 
