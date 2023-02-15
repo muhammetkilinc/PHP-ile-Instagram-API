@@ -24,7 +24,6 @@ $posts = 0;
 $username = "";
 $fullName = "";
 $photo = '';
-$photo2 = '';
 $story = "Yok";
 $gizliHesap = "Gizli Değil";
 $dogrulandi = "Doğrulanmadı";
