@@ -12,4 +12,4 @@ Aynı zamanda web site tasarımıyla da, elde edilen verileri görebilirsiniz.
 Arama yaptığınız anda klasörün altına o kişinin bütün bilgileri eklenir. 
 
 
-# Muhammet KILINÇ © 2023
+**Muhammet KILINÇ © 2023**
