@@ -290,8 +290,8 @@ olmak üzere toplamda ' . $tumunuSay . ' tane dosya klasörünüze kaydedilmişt
         </button>
       </form>
     </div>
-    <div class="githubLinkBox" target="_blank">
-      <a href="https://github.com/muhammetkilinc">
+    <div class="githubLinkBox">
+      <a href="https://github.com/muhammetkilinc" target="_blank">
         <div class="githubLink">
           <img src="assets/icons/github.svg" class="github" />
         </div>
